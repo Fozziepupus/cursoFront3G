@@ -12,6 +12,37 @@
 <body>
 	<header class="row">
 		<h1>Este es un Blog basado en Foundation</h1>
+	<!--UN MENÚ FOUNDATION, CÓDIGO PASTE DEL EJEMPLO EN LA WEB OFICIAL EN LA SECTION TOP NAVBAR-->
+		<nav class="top-bar" data-topbar><!--DATA-TOPBAR LA CLASE QUE HABILITA LAS FUNCIONES DE DROPDOWN-->
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">My Site</a></h1>
+				</li><!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon">
+					<a href="#"><span>Menu</span></a>
+				</li>
+			</ul>
+			<section class="top-bar-section"> <!-- Right Nav Section --> 
+				<ul class="right">
+					<li class="active">
+						<a href="#">Right Button Active</a>
+					</li>
+					<li class="has-dropdown">
+						<a href="#">Right Button Dropdown</a>
+						<ul class="dropdown">
+							<li>
+								<a href="#">First link in dropdown</a>
+							</li>
+						</ul>
+					</li>
+				</ul> <!-- Left Nav Section -->
+				<ul class="left">
+					<li>
+						<a href="#">Left Nav Button</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
 	</header>
 	<section class="row"><!--CLASE FOUNDATION QUE CREA UNA FILA-->
 		<!--CLASE FOUNDATION PARA CREAR UNA COLUMNA Y SE LE PUEDE INDICAR CUANDO SE DESEA QUE MIDA ESA FILA, SMALL,MEDIUM Y LARGE, BASADO EN MOBILE FIRST, Y TAMBIÉN INDICAR CUÁNTO SE DESEA QUE OCUPE, DESDE 1 HASTA 12-->
@@ -21,21 +52,31 @@
 			<!--SE PUEDEN TENER FILAS DENTRO DE COLUMNAS-->
 			<article class="row panel"><!--SE PUEDE DAR UN ESTILO DE PANEL A LAS FILAS EN ESTE CASO CON LA CLASE PANEL DE FOUNDATION-->
 				<h2>Título del POST</h2>
+				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<!--CON LA CLASE FOUNDATION BUTTON SE PUEDE CREAR UN BOTÓN UN TANTO CUÁNTO NICE, Y CON LA CLASE ROUND SE PUEDE HACER UN BOTÓN CASI REDONDO-->
+				<a href="#" class="button round">Ir al Post</a>
 			</article>
 			<article class="row panel">
 				<h2>Título del POST</h2>
+				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<a href="#" class="button radius">Ir al Post</a><!--SE PUEDE HACER QUE EL BOTÓN TENGA BORDES REDONDEADOS CON LA CLASE RADIUS DE FOUNDATION-->
+				<a href="#" class="button small">Ir al Post</a>
+				<a href="#" class="button medium">Ir al Post</a>
+				<a href="#" class="button large">Ir al Post</a>
 			</article>
 		</section>
 		<!--SE PUEDE INDICAR QUE SMALL TRABAJE EN UNA SOLA COLUMNA EN MEDIUM A 3 Y EN LARGE A 3 TAMBIÉN, EN ESTE CASO-->
@@ -44,35 +85,43 @@
 			<section class="row" data-equalizer>
 			<!--EMPLEANDO EQUALIZER WATCH LOS HIJOS HEREDARAN EL TAMAÑO DEL HIJO CON MAYOR ALTO-->
 				<article class="small-6 columns panel" data-equalizer-watch >
+					<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur.
+					</p>
 				</article>
 				<article class="small-6 columns panel" data-equalizer-watch>
+					<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 				</article>
 			</section>
 			<section class="row" data-equalizer>
 				<article class="small-6 columns panel" data-equalizer-watch>
+					<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. 
+					consequat.
+					</p>
 				</article>
 				<article class="small-6 columns panel" data-equalizer-watch>
+					<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 				</article>
 			</section>
 		</section>
