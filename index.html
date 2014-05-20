@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" /><!--VIEWPORT PARA EL RESPONSIVE-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Ejemplo de Blog usando Foundation CSS" />
+	<!--FOUNDATION ESTÁ BASADO EN OOCSS Y TRABAJA EN BASE A CLASES-->
+	<title>Este va a ser un Blog en Foundation</title>
+	<link rel="stylesheet" href="foundation/css/foundation.css" />
+    <script src="foundation/js/vendor/modernizr.js"></script>
+</head>
+<body>
+	<header class="row">
+		<h1>Este es un Blog basado en Foundation</h1>
+	</header>
+	<section class="row"><!--CLASE FOUNDATION QUE CREA UNA FILA-->
+		<!--CLASE FOUNDATION PARA CREAR UNA COLUMNA Y SE LE PUEDE INDICAR CUANDO SE DESEA QUE MIDA ESA FILA, SMALL,MEDIUM Y LARGE, BASADO EN MOBILE FIRST, Y TAMBIÉN INDICAR CUÁNTO SE DESEA QUE OCUPE, DESDE 1 HASTA 12-->
+		<!--PARA QUE NUESTRO DESARROLLO SEA MOBILE FIRST SE TIENEN QUE USAR LAS CLASES FOUNDATION DESDE SMALL A MEDIUM Y LARGE ;) -->
+		<!--SE PUEDE INDICAR QUE SMALL TRABAJE EN UNA SOLA COLUMNA EN MEDIUM A 8[MEDIDA] Y EN LARGE A 7[MEDIDA], EN ESTE CASO-->
+		<section class="small-12 medium-8 large-7 columns">
+			<!--SE PUEDEN TENER FILAS DENTRO DE COLUMNAS-->
+			<article class="row panel"><!--SE PUEDE DAR UN ESTILO DE PANEL A LAS FILAS EN ESTE CASO CON LA CLASE PANEL DE FOUNDATION-->
+				<h2>Título del POST</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</article>
+			<article class="row panel">
+				<h2>Título del POST</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</article>
+		</section>
+		<!--SE PUEDE INDICAR QUE SMALL TRABAJE EN UNA SOLA COLUMNA EN MEDIUM A 3 Y EN LARGE A 3 TAMBIÉN, EN ESTE CASO-->
+		<section class="small-12 medium-4 large-4 columns"><!--ESTE SECTION FUNCIONARÍA COMO UN SIDEBAR SEGÚN EL EJEMPLO-->
+		<!--EN EL CASO DE ESTAS CAJAS DEL SIDEBAR, LAS CAJAS TIENEN EL TAMAÑO DE SU CONTENIDO, ENTONCES LA CAJA DEL ESTILO DE FOUNDATION, ES DECIR, EL ESTILO DEL PANEL, SE DIBUJA HASTA DÓNDE EL CONTENIDO TERMINA, POR LO QUE QUEDAN UNAS MÁS GRANDES QUE OTRAS, Y PARA RESOLVER ESTE PROBLEMA DE DISEÑO NORMALMENTE SE USARÍA JAVASCRIPT, PERO FOUNDAT ES MAGICO Y YA NOS RESUELVE ESTE PROBLEMA POR MEDIO DE EQUALIZER DE FOUNDAT, EL CUÁL, EL PADRE, TOMA AL HIJO CON MAYOR ALTO Y ESE LO HEREDA A LOS DEMÁS HIJOS-->
+			<section class="row" data-equalizer>
+			<!--EMPLEANDO EQUALIZER WATCH LOS HIJOS HEREDARAN EL TAMAÑO DEL HIJO CON MAYOR ALTO-->
+				<article class="small-6 columns panel" data-equalizer-watch >
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.
+				</article>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</article>
+			</section>
+			<section class="row" data-equalizer>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</article>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</article>
+			</section>
+		</section>
+	</section><!--
+	<section class="row">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</section>-->
+	<script src="foundation/js/vendor/jquery.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
